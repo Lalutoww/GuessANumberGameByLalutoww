@@ -75,10 +75,10 @@ function guessANumber() {
                 }
             }else if(guess === "end"){
                     endGame();
-            }else if(guess === "wn"){ // dev tools
+            }/*else if(guess === "wn"){ // dev tools --> Prints the number
                     console.log(computerGuess);
                     game();
-            }else if(guess === "hint"){
+            }*/else if(guess === "hint"){
                 hintCount--
                 switch(hintCount){
                     case 3: console.log(`${hintCount} hints left.`); console.log(computerGuess % 10 === 0 ? "The number ends with 0" : "The number doesn't end with 0"); game(); break;
